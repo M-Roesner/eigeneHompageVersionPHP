@@ -1,0 +1,29 @@
+.goTop{
+    width: max-content;
+   
+    text-align: center;
+
+    position: sticky;
+    bottom: 20px;
+    z-index: 10;
+    /* float: right; */
+    /* right: 10px; */
+    margin-right: 10px;
+    left: 100vw;
+}
+
+
+.goTop a{
+    background-color: var(--color-background-dark-hover-transp);
+    color: var(--color-link-transp);
+    line-height: 1;
+    font-size: 2.5rem;
+    
+    @include border-default;
+    @include flex-default;
+    @include transition-bg-default;
+}
+.goTop a:hover{
+    background-color: var(--color-link-transp);
+    color: var(--color-background-dark-hover-transp);
+}

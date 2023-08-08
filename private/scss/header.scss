@@ -1,0 +1,192 @@
+// ANCHOR header functions
+@mixin show_dropdown{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+// ANCHOR Header generals
+nav{
+    height: var(--size-navbar-height);
+
+    @include bar-default;
+    
+    color: var(--color-text);
+    
+    display: flex;
+    justify-content: space-between;
+    
+    line-height: normal;
+    font-weight: 200;
+}
+
+nav input[type="checkbox"]{
+    display: none;
+}
+
+nav li[status="active"], nav .logo[status="active"]{
+    background-color: var(--color-background-dark);
+}
+
+.nav_main{
+    @include flex-default;
+}
+
+    .nav_item_general{
+        height: 100%;
+    }
+
+        .nav_link_general{
+            height: 100%;
+            
+            color: var(--color-text);
+
+            @include flex-default;
+        }
+        .nav_item_general:hover, nav .logo:hover{
+            background-color: var(--color-background-dark-hover);
+        }
+
+
+// ANCHOR logo
+.logo{
+    color: var(--color-text);
+    border-right: var(--color-background-dark) solid 2px;
+    font-size: 1.5rem;
+    
+    @include flex-default;
+    text-align: left;
+}    
+    .logo img{
+        padding: 0 var(--size-distance);
+        height: 64px;
+    }    
+    #domain-name{
+        padding-right: var(--size-distance);
+    }    
+
+
+// ANCHOR nav main
+.nav_item_main{
+    width: max-content;
+    
+    border-left: var(--color-background-dark) solid 2px;
+    position: relative;
+    @include transition-bg-default;
+}
+
+.nav_link_main{
+    padding: 0 var(--size-distance);
+}
+
+
+// ANCHOR dropdown
+.dropdown_aboutMe{
+    display: none;
+}
+
+#expandable_item_aboutMe .dropdown_aboutMe{
+    background-color: var(--color-background-dark);
+    border: var(--color-border) solid 1px;
+    border-top: none;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+    #expandable_item_aboutMe .nav_item_aboutMe{
+        width: 100%;
+        height: 100%;
+        padding: calc(var(--size-distance)/2) var(--size-distance);
+        border-bottom: var(--color-background-header) solid 2px;
+
+        @include flex-default;
+    }
+    #expandable_item_aboutMe .nav_item_aboutMe:last-child{
+        border-bottom: 0;
+    }
+
+// ANCHOR Params: mouse, touch pad
+@media (hover: hover) and (pointer: fine) {
+    #expandable_item_aboutMe:hover .dropdown_aboutMe{
+        @include show_dropdown();
+        top: var(--size-navbar-height);
+    }
+
+    #expandable_item_aboutMe:hover #li_item_aboutME{
+        display: none;
+    }
+}
+
+@media (hover: hover) and (pointer: fine) and (max-width: 560px) {
+    #domain-name{
+        display: none;
+    }
+}
+
+// ANCHOR Params: smartphones, touchscreens
+
+@media (hover: none) and (pointer: coarse){
+    #nav_link_aboutME{
+        pointer-events: none;
+    }
+
+    #checkbox_aboutMe:checked ~ .dropdown_aboutMe{
+        @include show_dropdown();
+    }
+    #checkbox_aboutMe ~ label #nav_link_aboutME::before{
+        content: "↓";
+    }
+    #checkbox_aboutMe ~ label #nav_link_aboutME::after{
+        content: "↓";
+    }
+    #checkbox_aboutMe:checked ~ label #nav_link_aboutME::before{
+        content: "↑";
+    }
+    #checkbox_aboutMe:checked ~ label #nav_link_aboutME::after{
+        content: "↑";
+    }
+}
+
+@media (hover: none) and (pointer: coarse) and (min-width: 551px){
+    nav{
+        height: var(--size-navbar-height);   
+    }
+
+    #checkbox_aboutMe:checked ~ .dropdown_aboutMe{
+        top: var(--size-navbar-height);
+    }
+}
+
+@media (hover: none) and (pointer: coarse) and (max-width: 560px){
+    nav{
+        height: var(--size-navbar-height-mobile);   
+    }
+
+    .logo img{
+        height: 48px;
+    }
+
+    #domain-name{
+        display: none;
+    }
+    
+    #checkbox_aboutMe:checked ~ .dropdown_aboutMe{
+        top: var(--size-navbar-height-mobile);
+    }
+}
+
+/* smartphones, touchscreens */
+@media (hover: none) and (pointer: coarse) {
+    /* ... */
+}
+/* stylus-based screens */
+@media (hover: none) and (pointer: fine) {
+    /* ... */
+}
+/* Nintendo Wii controller, Microsoft Kinect */
+@media (hover: hover) and (pointer: coarse) {
+    /* ... */
+}
+/* mouse, touch pad */
+@media (hover: hover) and (pointer: fine) {
+    /* ... */
+}

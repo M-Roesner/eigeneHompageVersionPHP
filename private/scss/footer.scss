@@ -1,0 +1,23 @@
+footer{
+    height: inherit;
+    width: 100%;
+    
+    @include bar-default;
+
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+footer a{
+    color: var(--color-link);
+      
+    @include transition-bg-default;
+}
+
+footer a:hover{
+    background-color: var(--color-link);
+    color: var(--color-background-footer);
+}

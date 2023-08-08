@@ -1,0 +1,182 @@
+@font-face {
+    font-family: "IBM";
+    src: url(../../private/fonts/IBMPlexMono-Italic.ttf) format("truetype");
+    font-weight: 400;
+    font-size: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "IBM";
+    src: url(../../private/fonts/IBMPlexMono-Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-size: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "IBM";
+    src: url(../../private/fonts/IBMPlexMono-ExtraLightItalic.ttf) format("truetype");
+    font-weight: 200;
+    font-size: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "IBM";
+    src: url(../../private/fonts/IBMPlexMono-ExtraLight.ttf) format("truetype");
+    font-weight: 200;
+    font-size: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+body {
+    height: 100vh;
+
+    background-color: var(--color-background-dark);
+    color: var(--color-text);
+
+    font-family: var(--font);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+
+    line-height: var(--line-height);
+    letter-spacing: 0.05rem;
+
+    scrollbar-gutter: stable !important;
+}
+
+.site {
+    margin: 0 auto;
+    padding-bottom: 40px;
+    width: 100%;
+    max-width: 1260px;
+    min-height: 100%;
+    position: relative;
+}
+
+main{
+    margin: 0 var(--size-distance);
+}
+
+h1, h2, h3, h4, h5{
+    font-weight: 200;
+    font-style: normal;
+    line-height: var(--line-height);
+    margin: calc(var(--line-height) / 5) 0;
+}
+
+h1{
+    font-size: 2rem;
+    color: var(--color-headline);
+    margin-top: calc(var(--line-height));
+}
+h1::after{
+    content: "{}";
+    color: var(--color-head-bracket);
+}
+
+h2{
+    font-size: 1.6rem;
+    color: var(--color-headline2);
+}
+h2::after{
+    content: "()";
+    color: var(--color-head-bracket);
+}
+
+h3{
+    font-size: 1.6rem;
+    color: var(--color-headline3);
+}
+h3::before{
+    content: "// ";
+}
+
+h4{
+    font-size: 1.4rem;
+    color: var(--color-headline4);
+}
+
+h5{
+    font-size: 1.2rem;
+    color: var(--color-headline4);
+}
+
+b{
+    font-weight: 400;
+}
+
+@media(max-width: 800px){
+    h1{
+        font-size: 1.5rem;
+        margin-top: calc(var(--line-height)/2);
+    }
+    
+    h2{
+        font-size: 1.4rem;
+    }
+
+    h3{
+        font-size: 1.3rem;
+    }
+    
+    h4{
+        font-size: 1.2rem;
+    }
+    
+    h5{
+        font-size: 1.1rem;
+    }
+
+    body{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 560px){
+    h1{
+        font-size: 1.3rem;
+    }
+    
+    h2{
+        font-size: 1.15rem;
+    }
+
+    h3{
+        font-size: 1.15rem;
+    }
+    
+    h4{
+        font-size: 1.05rem;
+    }
+    
+    h5{
+        font-size: 1.05rem;
+    }
+
+    body{
+        font-size: 1rem;
+    }
+
+}
+
+.infobox{
+    text-decoration: underline dotted var(--color-link);
+    cursor: help;
+}

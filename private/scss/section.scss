@@ -1,0 +1,181 @@
+// ANCHOR div - line left
+.line-left{
+    border-left: var(--color-border) solid 1px;
+    padding-left: var(--size-distance);
+}
+
+// ANCHOR generals - section
+section{
+    margin: var(--size-distance) 0;
+}
+
+section p{
+    margin-bottom: calc(var(--line-height) / 2);
+    color: var(--color-text);
+}
+
+section p:last-child{
+    margin-bottom: 0;
+}
+
+section a{
+    color: var(--color-link);
+
+    @include transition-bg-default;
+    
+}
+
+section a:hover{
+    background-color: var(--color-link);
+    color: var(--color-background-dark);
+}
+
+// ANCHOR Welcome Site
+
+#welcome_links{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+section .welcome_link{
+    @include border-default;
+    width: 49%;
+    padding: 0 var(--size-distance) var(--size-distance) var(--size-distance);
+
+    @include transition-bg-default;
+}
+
+section .welcome_link #phone-number{
+    display: block;
+}
+
+@media screen and (max-width: 700px) {
+    #welcome_links{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section .welcome_link{
+        width: 100%;
+    }
+}
+
+// ANCHOR Skills
+.skills li{
+    @include border-default; 
+
+    margin-bottom: 5px;
+    padding: 0 var(--size-distance);
+}
+
+.skills li:last-child{
+    margin-bottom: 0;
+}
+
+.skills li:hover{
+    background-color: var(--color-background-dark-hover);
+}
+
+.skills span{
+    display: none;
+    font-weight: 200;
+}
+
+.skills li:hover span{
+    display: inline;
+    color: var(--color-head-bracket);
+}
+
+.skills b{
+    color: var(--color-text);
+}
+
+// ANCHOR Section Project
+
+.project{
+    @include border-default;
+
+    width: 100%;
+    padding: var(--size-distance);
+    padding-bottom: calc(var(--line-height) / 2);
+    padding-top: 0;
+    margin-bottom: calc(var(--line-height) / 2);
+}
+.project:last-child{
+    margin-bottom: 0;
+}  
+
+.project table{
+    @include border-default;
+
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.project table tr td:first-child{
+    width: 20%;
+}
+
+.project td{
+    @include border-default;
+    
+    padding: 0.5vh calc(var(--size-distance) / 2);
+}
+
+.project .portf_ul{
+    list-style: circle;
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .project table{
+        border: 0;
+    }
+    .project table tr td:first-child{
+        width: 100%;
+    }
+    
+    .project td{
+        display: block;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .project table tr td:last-child{
+        margin-left: calc(var(--size-distance) / 2);
+        width: calc(100%-calc(var(--size-distance) / 2));
+    }
+}
+
+// ANCHOR Impressum Site
+
+#impressum{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+#impressum .impressum_info{
+    width: 49%;
+    padding: 0 var(--size-distance) var(--size-distance) var(--size-distance);
+}
+
+#phone-number{
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 700px) {
+    #impressum{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #impressum .impressum_info{
+        width: 100%;
+    }
+}

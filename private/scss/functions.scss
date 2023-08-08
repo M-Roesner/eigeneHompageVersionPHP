@@ -1,0 +1,22 @@
+@mixin flex-default{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin border-default {
+    border: var(--color-border) solid 1px;
+    border-radius: var(--border-radius);
+}
+
+@mixin transition-bg-default {
+    transition: background-color 0.5s;
+}
+
+@mixin bar-default {
+    padding: 0 calc(var(--size-distance) /2 );
+
+    background-color: var(--color-background-header);
+    background-image: linear-gradient(90deg, var(--color-background-dark), var(--color-background-header) 1%, var(--color-background-header) 98%, var(--color-background-header) 1%, var(--color-background-dark));
+}
