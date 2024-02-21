@@ -149,8 +149,15 @@ include("./private/pages/elements/head.php");
                                 </tr>
                                 <tr>
                                     <td>Link:</td>
-                                    <td><a href="https://github.com/M-Roesner/four-wins" target="_blank"
-                                            rel="noopener noreferrer">github 4 Gewinnt</a></td>
+                                    <td>
+                                        <p>
+                                            <a href="https://github.com/M-Roesner/four-wins" target="_blank"
+                                                rel="noopener noreferrer">Github: 4 Gewinnt</a>
+                                        </p>
+                                        <!-- <p>
+                                            <a href="projects/four-wins/index.php" target="_blank">Spiel: four-wins</a>
+                                        </p> -->
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Kategorie:</td>
