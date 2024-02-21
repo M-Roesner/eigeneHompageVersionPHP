@@ -75,6 +75,7 @@ include("./private/pages/elements/head.php");
                         <ul class="skills">
                             <li>JS/TS <span>„<b>J</b>ava<b>S</b>cript“ / „<b>T</b>ype<b>S</b>cript“</span></li>
                             <li>React</li>
+                            <li>Redux</li>
                             <li>HTML <span>„<b>H</b>yper<b>t</b>ext <b>M</b>arkup <b>L</b>anguage“</span></li>
                             <li>CSS <span>„<b>C</b>ascading <b>S</b>tyle <b>S</b>heets“</span></li>
                             <li>PHP <span>„<b>P</b>HP: <b>H</b>ypertext <b>P</b>reprocessor“, ursprünglich
@@ -87,13 +88,16 @@ include("./private/pages/elements/head.php");
                 </section>
 
                 <section id="whyJs">
-                    <h3>Warum <span title="JavaScript" class="infobox">JS</span> als zusätzliche Programmiersprache?
-                    </h3>
+                    <h3><span title="JavaScript" class="infobox">JS</span> als zusätzliche Programmiersprache:</h3>
+                    <p>Warum ich JS während meiner Umschulung als zusätzliche Programmiersprache gewählt habe.</p>
                     <div class="line-left">
                         <ul class="why-js">
-                            <li>Webauftritt, um mich zu präsentieren.</li>
-                            <li>Einsatzbereich in Frontend und Backend, sowie Webapps.</li>
-                            <li>Diese ist noch immer eine der meist genutzten Sprachen.</li>
+                            <li>Erstellung einer eigenen Webpräsenz zur persönlichen Vorstellung.</li>
+                            <li>Einsatzmöglichkeiten im Frontend und Backend sowie bei der Entwicklung von
+                                Webanwendungen.</li>
+                            <li>JavaScript ist und bleibt eine der wichtigsten und weitverbreitetsten
+                                Programmiersprachen.</li>
+
                         </ul>
                     </div>
                 </section>

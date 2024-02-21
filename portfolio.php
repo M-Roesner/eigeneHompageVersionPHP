@@ -36,7 +36,7 @@ include("./private/pages/elements/head.php");
                                         <ul class="portf_ul">
                                             <li>Entwicklung eines Prototyps zur Extrahierung eines Worddokuments in ein
                                                 JSON-Format für den Designer Polotno.</li>
-                                            <li>Bereitstellung einer Lösung, mit der Kunden vorhandene Word-Dokumente
+                                            <li>Bereitstellung einer Lösung, womit der Kunden vorhandene Word-Dokumente
                                                 effizient nutzen können.</li>
                                         </ul>
                                     </td>
@@ -73,7 +73,7 @@ include("./private/pages/elements/head.php");
                         </div>
 
                         <div class="project">
-                            <h2>Erworbene Fähigkeiten wärend meines Praktikums</h2>
+                            <h2>Erworbene Fähigkeiten während meines Praktikums</h2>
 
                             <table>
                                 <tr>
@@ -110,7 +110,8 @@ include("./private/pages/elements/head.php");
                                 <tr>
                                     <td>Anmerkung:</td>
                                     <td>
-                                        <p>Dies war ein kleines Gruppenprojekt während meiner Umschulung.</p>
+                                        <p>Dies war ein kleines Gruppenprojekt während meiner Umschulung, welches
+                                            benotet wurde.</p>
                                         <p>Es wurde innerhalb von etwa 2 Wochen außerhalb des regulären Schulunterrichts
                                             geplant und entwickelt.</p>
                                     </td>
@@ -123,9 +124,8 @@ include("./private/pages/elements/head.php");
                                 <tr>
                                     <td>Warum:</td>
                                     <td>
-                                        <p>Die Hauptmotivation lag darin, eine positive Note zu erhalten.</p>
-                                        <p>Der Schwerpunkt lag auf der Entwicklung einer Webseite ausschließlich mit PHP
-                                            und der Anwendung von:</p>
+                                        <p>Der Schwerpunkt lag auf der Entwicklung einer Webseite ausschließlich mit
+                                            PHP, wobei folgende Vorgaben von unserem Dozenten festgelegt wurden:</p>
                                         <ul class="portf_ul">
                                             <li>Funktionen</li>
                                             <li>Schleifen</li>
