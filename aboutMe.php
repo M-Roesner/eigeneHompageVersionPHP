@@ -106,7 +106,7 @@ include("./private/pages/elements/head.php");
                     <h3>Kontaktieren Sie mich über:</h3>
                     <div class="line-left">
                         <ul class="contact">
-                            <li>contact@markus-roesner.dev</li>
+                            <li><a href="mailto:contact@markus-roesner.dev">contact@markus-roesner.dev</a></li>
                             <li><a href="https://github.com/M-Roesner" target="_blank">[gitHub]</a></li>
                         </ul>
                     </div>
