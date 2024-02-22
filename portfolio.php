@@ -98,9 +98,95 @@ include("./private/pages/elements/head.php");
                     </div>
 
                     <h3>Eigene Projekte</h3>
-                    <p>
-                        Dies sind einige der Projekte, die ich während meiner Umschulung eigenständig erarbeitet habe.
-                    </p>
+                    <div class="line-left">
+
+                        <div class="project">
+                            <h2>Endless Jumping and Running Game</h2>
+                            <table>
+                                <tr>
+                                    <td>Anmerkung:</td>
+                                    <td>
+                                        <p>
+                                            Dieses Jump-and-Run-Spiel habe ich mithilfe eines Tutorials auf YouTube
+                                            entwickelt.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Warum:</td>
+                                    <td>
+                                        <p>
+                                            Ich wollte ein besseres Verständnis dafür entwickeln, wie man
+                                            objektorientiert in JavaScript arbeitet.
+                                        </p>
+                                        <p>
+                                            Die Entwicklung eines Spiels bot sich an, um ebenso Einblicke in die
+                                            Verwendung von Canvas zu erhalten.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Bilder:</td>
+                                    <td>
+                                        <p>Final Spiel:</p>
+                                        <img src="public/img/games/frankslaboratory_tutorial/finalGame-600pxWide.png"
+                                            alt="Jump-and-Run-Spiel" style="max-width: 100%">
+
+                                        <p>Krähen schießen Spiel:</p>
+                                        <img src="public/img/games/frankslaboratory_tutorial/CrowShooting-600pxWide.png"
+                                            alt="Krähen schießen Spiel" style="max-width: 100%">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Erworbene Fähigkeiten:</td>
+                                    <td>
+                                        <ul class="portf_ul">
+                                            <li>Umgang mit der Objektorientierung in JavaScript</li>
+                                            <li>
+                                                Kennenlernen von Funktionen mit Canvas, wie dem Zeichnen von Bildern.
+                                            </li>
+                                            <li>Sprite-Animations-Techniken</li>
+                                            <li>Parallaxeffekte</li>
+                                            <li>Bewegungsmuster für Gegner</li>
+                                            <li>Mauseventhandling und Tasteneventhandling</li>
+                                            <li>Kollisionsabfragen von Objekten</li>
+                                            <li>State-Management für die Charakterbewegungen</li>
+                                            <li>
+                                                Weitere Fähigkeiten im Umgang mit Canvas, wie zum Beispiel die
+                                                Implementierung von Partikelsystemen für spezielle Effekte.
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Verwendete Technologien:</td>
+                                    <td>
+                                        <p>JavaScript (objektorientiert), Canvas, HTML, CSS</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Links:</td>
+                                    <td>
+                                        <p>
+                                            <a href="https://github.com/M-Roesner/frankslaboratory_JavaScript-Game-Development-Course-for-Beginners"
+                                                target="_blank" rel="noopener noreferrer">Github: mein Code</a>
+                                        </p>
+                                        <p>
+                                            <a href="https://www.youtube.com/c/Frankslaboratory" target="_blank"
+                                                rel="noopener noreferrer">YouTube: Tutorial</a>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Kategorie:</td>
+                                    <td>Tutorial, Spielentwicklung</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <p></p>
+                    <p>Die nachfolgenden Projekte entstanden während meiner Umschulungszeit.</p>
 
                     <div class="line-left">
 
@@ -115,11 +201,6 @@ include("./private/pages/elements/head.php");
                                         <p>Es wurde innerhalb von etwa 2 Wochen außerhalb des regulären Schulunterrichts
                                             geplant und entwickelt.</p>
                                     </td>
-                                </tr>
-                                <tr>
-                                    <td>Bild:</td>
-                                    <td><img src="public/img/4gewinnt_500px_wide.png" alt="4 Gewinnt"
-                                            style="max-width: 100%;"></td>
                                 </tr>
                                 <tr>
                                     <td>Warum:</td>
@@ -138,7 +219,13 @@ include("./private/pages/elements/head.php");
                                             Aus diesem Grund haben wir uns für die Entwicklung dieses Spiels
                                             entschieden.
                                         </p>
-
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Bild:</td>
+                                    <td>
+                                        <img src="public/img/games/4wins/4gewinnt-600pxWide.png" alt="4 Gewinnt"
+                                            style="max-width: 100%">
                                     </td>
                                 </tr>
                                 <tr>
