@@ -183,12 +183,9 @@ include("./private/pages/elements/head.php");
                                 </tr>
                             </table>
                         </div>
-                    </div>
 
-                    <p></p>
-                    <p>Die nachfolgenden Projekte entstanden während meiner Umschulungszeit.</p>
-
-                    <div class="line-left">
+                        <p></p>
+                        <p>Die nachfolgenden Projekte entstanden während meiner Umschulungszeit.</p>
 
                         <div class="project">
                             <h2>4 Gewinnt</h2>
