@@ -125,6 +125,7 @@ include("./private/pages/elements/head.php");
                         <ul class="contact">
                             <li><a href="mailto:contact@markus-roesner.dev">contact@markus-roesner.dev</a></li>
                             <li><a href="https://github.com/M-Roesner" target="_blank">[gitHub]</a></li>
+                            <li><a href="https://www.xing.com/profile/Markus_Roesner14" target="_blank">[XING]</a></li>
                         </ul>
                     </div>
                 </section>
