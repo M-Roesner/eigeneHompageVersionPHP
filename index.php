@@ -1,6 +1,6 @@
 <?php
 $current_page = "index";
-include("./private/pages/elements/head.php");
+include ("./private/pages/elements/head.php");
 ?>
 <title>Willkommen</title>
 </head>
@@ -8,7 +8,7 @@ include("./private/pages/elements/head.php");
 <body>
     <div id="top" class="site">
         <?php
-        include("./private/pages/elements/header.php");
+        include ("./private/pages/elements/header.php");
         ?>
         <main>
             <h1>Willkommen auf meiner Seite!</h1>
@@ -18,9 +18,8 @@ include("./private/pages/elements/head.php");
                         Auf dieser Seite können Sie vieles über mich und meine Projekte erfahren.
                     </p>
                     <p style="color: var(--color-link);">
-                        Hinweis: Diese Webseite basiert aktuell auf PHP-Basis und wird in Zukunft auf React mit
-                        TypeScript
-                        umgebaut, eine Technologie, die ich während meines Praktikums erlernt habe."
+                        Hinweis: Diese Webseite basiert aktuell auf PHP und wird derzeit auf React.js unter anderem mit
+                        TypeScript, React-Router und Styled Components umgebaut.
                     </p>
                 </section>
                 <section id="welcome_links">
@@ -39,7 +38,7 @@ include("./private/pages/elements/head.php");
             </div>
         </main>
 
-        <?php include("./private/pages/elements/footer.php"); ?>
+        <?php include ("./private/pages/elements/footer.php"); ?>
     </div>
 
 </body>
