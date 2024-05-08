@@ -21,6 +21,8 @@ include ("./private/pages/elements/head.php");
                         Hinweis: Diese Webseite basiert aktuell auf PHP und wird derzeit auf React.js unter anderem mit
                         TypeScript, React-Router und Styled Components umgebaut.
                     </p>
+                    Hier können Sie unteranderem den aktuellen Stand sehen:
+                    <a href="https://github.com/M-Roesner" target="_blank">[gitHub]</a>
                 </section>
                 <section id="welcome_links">
                     <a href="aboutMe.php" id="link_aboutMe" class="welcome_link">
